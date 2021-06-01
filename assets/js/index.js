@@ -59,4 +59,90 @@ function cuadratica (a,b,c){
 
 console.log(cuadratica(1,-1,-12));
 
+function pendiente(y1,y2,x1,x2){
+   partea = y2-y1;
+   parteb = x2-x1
+   partefinal = partea/parteb
+   
+   return partefinal
+}
+console.log(pendiente (10,5,20,10));
 
+function mayor(n){
+    let f = ""
+    if (n>10){
+        f = "Numero "+n+" es mayor a 10";       
+    } else if (n==10){
+        f = "Numero "+n+" es igual a 10";
+    } else {
+        f = "Numero "+n+" es menor a 10";
+    }  
+    return f;
+}
+
+console.log(mayor(11));
+
+function mayorswitch (n){
+    let f ="";
+    switch (n) {
+        case 11:
+            f = "Numero "+n+" es1"; 
+            break;
+        case 10:
+            f = "Numero "+n+" es igual a 10"; 
+            break;
+        case 5:
+            f = "Numero "+n+" es 5"; 
+            break;
+        default: f = "Numero "+n+" es menor a 10"; 
+            break;
+    }
+    return f;
+}
+console.log(mayorswitch(0));
+
+function multiplicar (n){
+    
+    for (i = 1; i<=10; i++){
+        var multiplicacion = i*n;
+        console.log(multiplicacion);
+    }
+}
+multiplicar(5);
+multiplicar(8);
+
+function numeros(){
+
+    for(i =100 ; i<=200; i++){
+    var numeros = i;
+    console.log(numeros);
+    }
+}
+numeros();
+
+function numeros2(){
+
+    for(i =100 ; i<=1000; i= i+100){
+    var numeros = i;
+    console.log(numeros);
+    }
+}
+numeros2();
+
+function numero3(){
+    let i = 0;
+    while (i<=10) {
+        console.log(i);
+        i = i+1;            
+    }
+}
+numero3();
+
+function numero4(){
+    let i = 0;
+
+    do {i = i+1
+        console.log(i);     
+   } while (i<10); 
+}
+numero4();
